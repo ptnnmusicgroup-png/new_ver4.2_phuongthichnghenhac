@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PTNN Account - Login / Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Nunito:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="auth-page">
+    <div class="dream-layer" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <main class="auth-screen">
+      <section class="auth-hero-panel" aria-labelledby="auth-page-title">
+        <a class="back-link" href="index.html">← Back Home</a>
+        <p class="kicker">🐹 PTNN Account</p>
+        <h1 id="auth-page-title">Phương Thích Nghe Nhạc</h1>
+        <p class="tagline">Login or sign up to join Music With You Everyday! 🎧</p>
+        <p class="auth-admin-note">Admin local login hỗ trợ bằng tên tài khoản mặc định để quản lý mục Updates.</p>
+        <div class="mini-capybara" aria-hidden="true">
+          <span>🐹</span>
+          <strong>Capybara Chill Zone</strong>
+        </div>
+      </section>
+
+      <section class="auth-page-card" aria-label="Login and sign up form">
+        <div class="auth-tabs" role="tablist" aria-label="Account form tabs">
+          <button class="auth-tab active" type="button" data-auth-tab="login">Login</button>
+          <button class="auth-tab" type="button" data-auth-tab="signup">Sign Up</button>
+        </div>
+
+        <div class="provider-login" aria-label="Social login options">
+          <button class="provider-button google" type="button" data-provider="google">
+            <span>G</span>
+            Continue with Google
+          </button>
+          <button class="provider-button facebook" type="button" data-provider="facebook">
+            <span>f</span>
+            Continue with Facebook
+          </button>
+          <button class="provider-button instagram" type="button" data-provider="instagram">
+            <span>◎</span>
+            Continue with Instagram
+          </button>
+        </div>
+
+        <div class="auth-divider"><span>or use email</span></div>
+
+        <form id="auth-page-form">
+          <label>
+            Email hoặc tên tài khoản
+            <input id="page-auth-email" type="text" autocomplete="username" placeholder="you@example.com hoặc Phương Thích Nghe Nhạc - Admin" required />
+          </label>
+          <label>
+            Password
+            <input id="page-auth-password" type="password" autocomplete="current-password" minlength="6" placeholder="At least 6 characters" required />
+          </label>
+          <button class="dream-button" type="submit" id="page-auth-submit">Login</button>
+          <p class="auth-message" id="page-auth-message" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="site-auth.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-auth-compat.js"></script>
+    <script src="auth.js"></script>
+  </body>
+</html>

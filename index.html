@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Phương Thích Nghe Nhạc - Music With You Everyday!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Nunito:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="dream-layer" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="PTNN home">
+        <span class="brand-icon">🐹</span>
+        <span>Phương Thích Nghe Nhạc</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#socials">PTNN's Social medias</a>
+        <a href="#spotify">Phương Thích Nghe Nhạc's Spotify</a>
+        <a href="#store">Store</a>
+        <a href="updates.html">Updates</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <div class="auth-actions" aria-label="Account actions">
+        <a class="dream-button small" href="auth.html#login" data-auth-link="login">Login</a>
+        <a class="dream-button small light" href="auth.html#signup" data-auth-link="signup">Sign Up</a>
+        <button class="dream-button small hidden" type="button" data-auth="signout">Sign Out</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero page-section">
+        <div class="hero-copy">
+          <p class="kicker">🐹 Phương Thích Nghe Nhạc - Music With You Everyday!</p>
+          <h1>Phương Thích Nghe Nhạc</h1>
+          <p class="tagline">Music With You Everyday! 🎧</p>
+          <div class="hero-actions">
+            <a class="dream-button" href="#spotify">🎵 Listen Now</a>
+            <a class="dream-button light" href="#socials">🌐 Follow PTNN</a>
+          </div>
+        </div>
+
+        <div class="capybara-stage" aria-label="Dreamy music capybara artwork">
+          <div class="moon"></div>
+          <div class="capybara">
+            <div class="ear left"></div>
+            <div class="ear right"></div>
+            <div class="face">
+              <span class="eye left"></span>
+              <span class="eye right"></span>
+              <span class="nose"></span>
+            </div>
+            <div class="headphones"></div>
+          </div>
+          <div class="note note-one">♪</div>
+          <div class="note note-two">♫</div>
+          <div class="note note-three">♬</div>
+        </div>
+      </section>
+
+      <section id="releases" class="release-section page-section" aria-labelledby="release-title">
+        <div class="release-heading">
+          <p class="kicker">Release - Coming Soon</p>
+          <h2 id="release-title">meow!~</h2>
+        </div>
+
+        <div class="release-grid" id="release-list" aria-live="polite">
+          <article class="release-card featured-release">
+            <div class="release-art-frame">
+              <img src="assets/meow-single.png" alt="meow single artwork" />
+            </div>
+            <div class="release-card-body">
+              <span class="update-tag">Single</span>
+              <strong>meow!~</strong>
+              <p>Release - Coming Soon</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="socials" class="social-section page-section" aria-labelledby="social-title">
+        <div class="social-heading">
+          <div class="section-heading">
+            <p class="kicker">PTNN Social Medias:</p>
+            <h2 id="social-title">PTNN Social Medias 🌐</h2>
+            <p>Connect with Phương Thích Nghe Nhạc everywhere in a cozy capybara music corner.</p>
+          </div>
+          <div class="social-capybara" aria-label="Cute brown capybara holding music notes">
+            <div class="social-capybara-ear left"></div>
+            <div class="social-capybara-ear right"></div>
+            <div class="social-capybara-face">
+              <span class="social-capybara-eye left"></span>
+              <span class="social-capybara-eye right"></span>
+              <span class="social-capybara-nose"></span>
+              <span class="social-capybara-mouth"></span>
+            </div>
+            <div class="social-capybara-note one">♪</div>
+            <div class="social-capybara-note two">♫</div>
+            <div class="social-capybara-note three">♬</div>
+          </div>
+        </div>
+
+        <div class="social-grid">
+          <article class="social-card" style="--card-delay: 0s">
+            <h3>Facebook PTNN</h3>
+            <p>facebook.com/phuongnguyencomputer.official</p>
+            <a href="https://facebook.com/phuongnguyencomputer.official" target="_blank" rel="noreferrer">Visit</a>
+          </article>
+          <article class="social-card" style="--card-delay: .05s">
+            <h3>PTNN Artist Records</h3>
+            <p>facebook.com/ptnn.artist.records</p>
+            <a href="https://facebook.com/ptnn.artist.records" target="_blank" rel="noreferrer">Visit</a>
+          </article>
+          <article class="social-card" style="--card-delay: .1s">
+            <h3>MLAT Page</h3>
+            <p>profile.php?id=61588424225139</p>
+            <a href="https://www.facebook.com/profile.php?id=61588424225139" target="_blank" rel="noreferrer">Visit</a>
+          </article>
+          <article class="social-card" style="--card-delay: .15s">
+            <h3>YouTube PTNN</h3>
+            <p>@ptnn.lovelytimewithmusic</p>
+            <a href="https://www.youtube.com/@ptnn.lovelytimewithmusic" target="_blank" rel="noreferrer">Visit</a>
+          </article>
+          <article class="social-card" style="--card-delay: .2s">
+            <h3>Moonlight Channel</h3>
+            <p>@moonlight_at_night_1</p>
+            <a href="https://www.youtube.com/@moonlight_at_night_1" target="_blank" rel="noreferrer">Visit</a>
+          </article>
+          <article class="social-card" style="--card-delay: .25s">
+            <h3>TikTok PTNN</h3>
+            <p>@ptnn_musicgroup</p>
+            <a href="https://www.tiktok.com/@ptnn_musicgroup" target="_blank" rel="noreferrer">Visit</a>
+          </article>
+          <article class="social-card" style="--card-delay: .3s">
+            <h3>Spotify</h3>
+            <p>25MOkDsozYW9OaaCAwqsSC</p>
+            <a href="https://open.spotify.com/artist/25MOkDsozYW9OaaCAwqsSC" target="_blank" rel="noreferrer">Visit</a>
+          </article>
+          <article class="social-card" style="--card-delay: .35s">
+            <h3>Apple Music</h3>
+            <p>Phương Thích Nghe Nhạc</p>
+            <a href="https://music.apple.com/search?term=Ph%C6%B0%C6%A1ng%20Th%C3%ADch%20Nghe%20Nh%E1%BA%A1c" target="_blank" rel="noreferrer">Visit</a>
+          </article>
+          <article class="social-card" style="--card-delay: .4s">
+            <h3>SoundCloud</h3>
+            <p>phuongthichnghenhac</p>
+            <a href="https://soundcloud.com/phuongthichnghenhac" target="_blank" rel="noreferrer">Visit</a>
+          </article>
+          <article class="social-card" style="--card-delay: .45s">
+            <h3>Amazon Music</h3>
+            <p>PTNN Artist</p>
+            <a href="https://music.amazon.com/search/PTNN%20Artist" target="_blank" rel="noreferrer">Visit</a>
+          </article>
+          <article class="social-card" style="--card-delay: .5s">
+            <h3>Deezer</h3>
+            <p>PTNN Artist</p>
+            <a href="https://www.deezer.com/search/PTNN%20Artist" target="_blank" rel="noreferrer">Visit</a>
+          </article>
+          <article class="social-card" style="--card-delay: .55s">
+            <h3>TIDAL</h3>
+            <p>66294560</p>
+            <a href="https://tidal.com/browse/artist/66294560" target="_blank" rel="noreferrer">Visit</a>
+          </article>
+          <article class="social-card" style="--card-delay: .6s">
+            <h3>Kugou China</h3>
+            <p>Search PTNN</p>
+            <a href="https://www.kugou.com/" target="_blank" rel="noreferrer">Visit</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="spotify" class="spotify-section page-section" aria-labelledby="spotify-title">
+        <div class="section-heading">
+          <p class="kicker">🎧 PTNN Music Notebook</p>
+          <h2 id="spotify-title">Phương Thích Nghe Nhạc</h2>
+          <p>Spotify Capybara Chill Zone 🎵🐹</p>
+        </div>
+
+        <div class="spotify-panel">
+          <div>
+            <h3>🎶 Featured Spotify Track</h3>
+            <p>Artist embed for Phương Thích Nghe Nhạc. Use the Spotify link when the player needs to open in a full app window.</p>
+            <a class="dream-button compact" href="https://open.spotify.com/artist/25MOkDsozYW9OaaCAwqsSC" target="_blank" rel="noreferrer">Open Spotify Artist</a>
+          </div>
+          <iframe
+            title="Phương Thích Nghe Nhạc Spotify Artist Embed"
+            src="https://open.spotify.com/embed/artist/25MOkDsozYW9OaaCAwqsSC?utm_source=generator&theme=0"
+            width="100%"
+            height="352"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+
+      <section id="updates" class="updates-preview-section page-section" aria-labelledby="updates-preview-title">
+        <div class="updates-preview-header">
+          <div class="section-heading">
+            <p class="kicker">Updates</p>
+            <h2 id="updates-preview-title">Bài viết mới từ PTNN</h2>
+            <p>Xem nhanh các bài đăng mới nhất ngay trên trang chủ. Muốn xem đầy đủ hoặc quản lý bài, mở trang Updates riêng.</p>
+          </div>
+          <a class="dream-button compact" href="updates.html">Mở trang Updates</a>
+        </div>
+
+        <div class="updates-preview-list" id="updates-preview-list" aria-live="polite"></div>
+      </section>
+
+      <section id="store" class="store-section store-locked page-section" aria-labelledby="store-title">
+        <div class="store-lock-overlay" aria-label="Store is updating">
+          <div class="store-lock-icon" aria-hidden="true">🔒</div>
+          <strong>UPDATING<span class="updating-dots" aria-hidden="true"></span></strong>
+        </div>
+        <div class="store-heading">
+          <div>
+            <p class="kicker">Store</p>
+            <h2 id="store-title">🛍 PTNN Capybara Store</h2>
+          </div>
+          <button class="cart-pill" id="cart-pill" type="button">Cart 🛒 <span id="cart-count">0</span></button>
+        </div>
+
+        <p class="store-intro">
+          Chọn merch, điền địa chỉ nhận hàng và tạo vận đơn J&T ngay trên web. Luồng tạo đơn thật sẽ gọi
+          server-side endpoint để bảo vệ API key và chữ ký tích hợp.
+        </p>
+
+        <div class="store-layout">
+          <div class="product-grid">
+            <article
+              class="product-card"
+              data-product-id="mid-autumn-keychain"
+              data-product-name="Lovely Mid-Autumn-Festival Keychain for EP"
+              data-price="30000"
+              data-weight="0.15"
+            >
+            <div class="product-art festival">🌕</div>
+            <h3>Lovely Mid-Autumn-Festival</h3>
+            <p>Keychain for EP</p>
+            <strong>30.000₫</strong>
+            <div class="product-actions">
+              <button class="dream-button compact add-cart" type="button">Add to cart</button>
+              <button class="dream-button compact light buy-now" type="button">Thanh toán ngay</button>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-product-id="christmas-keychain"
+            data-product-name="Christmas Is Coming Keychain for Album"
+            data-price="30000"
+            data-weight="0.15"
+          >
+            <div class="product-art christmas">🎄</div>
+            <h3>Christmas Is Coming</h3>
+            <p>Keychain for Album</p>
+            <strong>30.000₫</strong>
+            <div class="product-actions">
+              <button class="dream-button compact add-cart" type="button">Add to cart</button>
+              <button class="dream-button compact light buy-now" type="button">Thanh toán ngay</button>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-product-id="life-keychain"
+            data-product-name="Life is everything Keychain for EP"
+            data-price="30000"
+            data-weight="0.15"
+          >
+            <div class="product-art life">🎧</div>
+            <h3>Life is everything</h3>
+            <p>Keychain for EP</p>
+            <strong>30.000₫</strong>
+            <div class="product-actions">
+              <button class="dream-button compact add-cart" type="button">Add to cart</button>
+              <button class="dream-button compact light buy-now" type="button">Thanh toán ngay</button>
+            </div>
+          </article>
+          </div>
+
+          <aside class="checkout-panel" id="checkout-panel" aria-labelledby="checkout-title">
+            <div class="checkout-header">
+              <p class="kicker">Checkout</p>
+              <h3 id="checkout-title">Thanh toán ngay</h3>
+              <p>Tạo đơn mua hàng, lưu nháp trên trình duyệt hoặc đẩy thẳng sang J&T khi backend đã cấu hình xong.</p>
+            </div>
+
+            <div class="checkout-empty" id="checkout-empty">
+              <strong>Giỏ hàng đang trống.</strong>
+              <p>Thêm ít nhất một sản phẩm để mở form thanh toán và tạo vận đơn.</p>
+            </div>
+
+            <div class="checkout-items" id="checkout-items" aria-live="polite"></div>
+
+            <div class="checkout-totals">
+              <div>
+                <span>Tạm tính</span>
+                <strong id="checkout-subtotal">0₫</strong>
+              </div>
+              <div>
+                <span>Số món</span>
+                <strong id="checkout-count">0</strong>
+              </div>
+              <div>
+                <span>Cân nặng ước tính</span>
+                <strong id="checkout-weight">0 kg</strong>
+              </div>
+            </div>
+
+            <form id="checkout-form" class="checkout-form">
+              <div class="checkout-grid">
+                <label>
+                  Họ và tên người nhận
+                  <input id="receiver-name" name="receiverName" type="text" placeholder="Người nhận hàng" required />
+                </label>
+                <label>
+                  Số điện thoại
+                  <input id="receiver-phone" name="receiverPhone" type="tel" placeholder="+84..." required />
+                </label>
+                <label class="full-span">
+                  Email
+                  <input id="receiver-email" name="receiverEmail" type="email" placeholder="you@example.com" />
+                </label>
+                <label class="full-span">
+                  Địa chỉ giao hàng
+                  <input id="receiver-address" name="receiverAddress" type="text" placeholder="Số nhà, tên đường..." required />
+                </label>
+                <label>
+                  Phường/Xã
+                  <input id="receiver-ward" name="receiverWard" type="text" placeholder="Phường/Xã" />
+                </label>
+                <label>
+                  Quận/Huyện
+                  <input id="receiver-district" name="receiverDistrict" type="text" placeholder="Quận/Huyện" />
+                </label>
+                <label>
+                  Tỉnh/Thành phố
+                  <input id="receiver-province" name="receiverProvince" type="text" placeholder="Tỉnh/Thành phố" />
+                </label>
+                <label>
+                  Mã bưu chính
+                  <input id="receiver-zip" name="receiverZip" type="text" placeholder="70000" value="70000" required />
+                </label>
+              </div>
+
+              <div class="checkout-options" aria-label="Tùy chọn đơn hàng">
+                <label class="option-chip">
+                  <input type="radio" name="paymentMethod" value="cod" checked />
+                  <span>COD</span>
+                </label>
+                <label class="option-chip">
+                  <input type="radio" name="paymentMethod" value="bank" />
+                  <span>Chuyển khoản</span>
+                </label>
+                <label class="option-chip">
+                  <input type="radio" name="serviceType" value="1" checked />
+                  <span>J&T Pickup</span>
+                </label>
+                <label class="option-chip">
+                  <input type="radio" name="serviceType" value="6" />
+                  <span>J&T Drop Off</span>
+                </label>
+              </div>
+
+              <details class="jnt-advanced">
+                <summary>Mã mapping J&T cho khu vực nhận hàng</summary>
+                <p>
+                  Theo quy trình tích hợp J&T, `destination_code` và `receiver_area` chỉ dùng được sau khi J&T mapping
+                  tỉnh/thành và quận/huyện của shop với mã nội bộ của họ.
+                </p>
+                <div class="checkout-grid">
+                  <label>
+                    Destination code
+                    <input id="destination-code" name="destinationCode" type="text" placeholder="HCM" />
+                  </label>
+                  <label>
+                    Receiver area
+                    <input id="receiver-area" name="receiverArea" type="text" placeholder="HCM001" />
+                  </label>
+                </div>
+              </details>
+
+              <label>
+                Ghi chú đơn hàng
+                <textarea id="order-note" name="orderNote" rows="4" placeholder="Ví dụ: gọi trước khi giao, giao giờ hành chính..."></textarea>
+              </label>
+
+              <div class="checkout-actions">
+                <button class="dream-button compact light" id="save-draft" type="button">Lưu nháp</button>
+                <button class="dream-button compact" id="create-jnt-order" type="submit">Tạo đơn J&T</button>
+              </div>
+
+              <p class="checkout-message" id="checkout-message" aria-live="polite"></p>
+
+              <div class="shipment-result hidden" id="shipment-result">
+                <div>
+                  <span>Mã đơn web</span>
+                  <strong id="result-orderid">-</strong>
+                </div>
+                <div>
+                  <span>Mã vận đơn J&T</span>
+                  <strong id="result-awb">-</strong>
+                </div>
+                <div>
+                  <span>ETA</span>
+                  <strong id="result-etd">-</strong>
+                </div>
+                <div>
+                  <span>Trạng thái</span>
+                  <strong id="result-status">-</strong>
+                </div>
+              </div>
+            </form>
+          </aside>
+        </div>
+      </section>
+
+      <section id="about" class="about-section page-section" aria-labelledby="about-title">
+        <div class="about-card">
+          <p class="kicker">About PTNN</p>
+          <h2 id="about-title">🐹 Phương Thích Nghe Nhạc</h2>
+          <p>
+            PTNN (Phương Thích Nghe Nhạc) là một dự án âm nhạc được xây dựng với
+            mục tiêu mang đến trải nghiệm nghe nhạc chill, thư giãn và đầy cảm
+            xúc mỗi ngày. 🎧
+          </p>
+          <p>
+            Từ các playlist học tập, ngủ ngon đến những bản nhạc theo mùa như
+            Trung Thu hay Giáng Sinh, PTNN luôn cố gắng tạo ra không gian âm
+            nhạc riêng biệt cho bạn.
+          </p>
+          <dl>
+            <div>
+              <dt>Founder</dt>
+              <dd>Nguyễn Đặng Phương</dd>
+            </div>
+            <div>
+              <dt>Brand</dt>
+              <dd>PTNN Music Group</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>2026 Phương Thích Nghe Nhạc - All rights reserved</p>
+      <p>Phone: +84 843340112</p>
+      <p>e-mail: <a href="mailto:ptnn.musicgroup@gmail.com">ptnn.musicgroup@gmail.com</a></p>
+      <p class="footer-credit">Made w ❤️ by Phuong Me Dev</p>
+      <p class="footer-stack">Netlify - Codex - GitHub - Phuong Me Dev - Firebase</p>
+    </footer>
+
+    <div class="auth-modal hidden" id="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+      <div class="auth-dialog">
+        <button class="modal-close" type="button" aria-label="Close login form">×</button>
+        <p class="kicker">PTNN Account</p>
+        <h2 id="auth-title">Login</h2>
+        <p class="auth-help">Use email and password to access the PTNN store and account features.</p>
+        <div class="provider-login" aria-label="Social login options">
+          <button class="provider-button google" type="button" data-modal-provider="google">
+            <span>G</span>
+            Continue with Google
+          </button>
+          <button class="provider-button facebook" type="button" data-modal-provider="facebook">
+            <span>f</span>
+            Continue with Facebook
+          </button>
+          <button class="provider-button instagram" type="button" data-modal-provider="instagram">
+            <span>◎</span>
+            Continue with Instagram
+          </button>
+        </div>
+        <div class="auth-divider"><span>or use email</span></div>
+        <form id="auth-form">
+          <label>
+            Email hoặc tên tài khoản
+            <input id="auth-email" type="text" autocomplete="username" placeholder="you@example.com hoặc Phương Thích Nghe Nhạc - Admin" required />
+          </label>
+          <label>
+            Password
+            <input id="auth-password" type="password" autocomplete="current-password" minlength="6" placeholder="At least 6 characters" required />
+          </label>
+          <button class="dream-button" type="submit" id="auth-submit">Login</button>
+          <p class="auth-message" id="auth-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+
+    <script src="site-auth.js"></script>
+    <script src="site-updates.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
