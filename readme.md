@@ -111,10 +111,9 @@ Founder của **Phương Thích Nghe Nhạc**
 ## ❤️ Lời cảm ơn
 Xin chân thành cảm ơn **Firebase**, **Netlify**, **GitHub**, **Codex** và cộng đồng mã nguồn mở đã hỗ trợ trong quá trình phát triển dự án.
 ---
+## ❤️ ĐƯỜNG LINK DỰ ÁN: https://ptnn-myfan-page.netlify.com
+---
 <p align="center">
 🎧 <b>Music With You Everyday!</b><br>
 Made with ❤️ by <b>Phuong Me Dev</b>
 </p>
-
----
-## ❤️ĐƯỜNG LINK DỰ ÁN: https://ptnn-myfan-page.netlify.com
