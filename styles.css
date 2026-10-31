@@ -2101,3 +2101,14 @@ input:focus,textarea:focus,select:focus{outline:2px solid rgba(230,180,132,.35);
  html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
  .reveal-ready .reveal-on-scroll{opacity:1;transform:none;filter:none}
 }
+
+/* Auth page is intentionally full-canvas; the sidebar offset applies only to site pages. */
+body:not(.auth-page) main, body:not(.auth-page) .site-footer{margin-left:304px}
+.auth-page main.auth-screen{margin-left:0;padding-top:clamp(24px,6vw,80px)}
+@media(max-width:1100px){body:not(.auth-page) main,body:not(.auth-page) .site-footer{margin-left:276px}}
+@media(max-width:820px){body:not(.auth-page) main,body:not(.auth-page) .site-footer{margin-left:0}}
+.social-card::marker{color:transparent}
+.social-card::before,.social-card::after{pointer-events:none}
+.social-card::selection,.release-card::selection{background:rgba(255,220,180,.3)}
+.social-card::after,.release-card::after,.product-card::after,.spotify-panel::after,.about-card::after{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;pointer-events:none;background:radial-gradient(260px circle at var(--spot-x,50%) var(--spot-y,50%),rgba(255,225,190,.105),transparent 72%);opacity:0;transition:opacity .3s ease}
+.social-card:hover::after,.release-card:hover::after,.product-card:hover::after,.spotify-panel:hover::after,.about-card:hover::after{opacity:1}
