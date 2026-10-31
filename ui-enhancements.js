@@ -29,9 +29,20 @@
   navLinks.forEach((link) => {
     const href = link.getAttribute("href") || "";
     const isUpdates = path === "updates.html" && href === "updates.html";
-    const isHome = path !== "updates.html" && (href === "#home" || href === "index.html#home");
+    const isHome = path !== "updates.html" && href === "#home";
     if (isUpdates || isHome) link.classList.add("active");
   });
+  if (path !== "updates.html" && "IntersectionObserver" in window) {
+    const sectionLinks = new Map(navLinks.map((link) => [link.getAttribute("href"), link]));
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        navLinks.forEach((link) => link.classList.remove("active"));
+        sectionLinks.get("#" + entry.target.id)?.classList.add("active");
+      });
+    }, { rootMargin: "-25% 0px -60% 0px", threshold: 0 });
+    document.querySelectorAll("main > section[id]").forEach((section) => sectionObserver.observe(section));
+  }
 
   const revealTargets = document.querySelectorAll(".page-section, .social-card, .release-card, .product-card, .about-card, .spotify-panel, .update-card, .updates-admin-card, .updates-feed");
   if ("IntersectionObserver" in window) {
