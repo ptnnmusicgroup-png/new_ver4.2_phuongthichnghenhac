@@ -1,8 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#17100e" />
+    <meta name="description" content="Phương Thích Nghe Nhạc — Music With You Everyday! Khám phá releases, nghe nhạc và kết nối cùng PTNN." />
+    <meta property="og:title" content="Phương Thích Nghe Nhạc — Music With You Everyday!" />
+    <meta property="og:description" content="A cozy capybara music corner by PTNN." />
+    <meta property="og:type" content="website" />
 
     <link rel="icon" type="image/png" href="/favicon.png" />
 
@@ -24,27 +29,43 @@
       <span></span>
     </div>
 
-    <header class="site-header">
-      <a class="brand" href="#home" aria-label="PTNN home">
-        <span class="brand-icon">🐹</span>
-        <span>Phương Thích Nghe Nhạc</span>
+    
+    <aside class="site-sidebar" id="site-sidebar" aria-label="PTNN navigation">
+      <a class="sidebar-brand" href="#home" aria-label="PTNN home">
+        <span class="sidebar-brand-mark">🐹</span>
+        <span class="sidebar-brand-copy"><strong>PTNN</strong><small>Music With You Everyday!</small></span>
       </a>
-
-      <nav class="nav-links" aria-label="Main navigation">
-        <a href="#home">Home</a>
-        <a href="#socials">PTNN's Social medias</a>
-        <a href="#spotify">Phương Thích Nghe Nhạc's Spotify</a>
-        <a href="#store">Store</a>
-        <a href="updates.html">Updates</a>
-        <a href="#about">About</a>
+      <div class="sidebar-divider"></div>
+      <nav class="sidebar-nav" aria-label="Main navigation">
+        <p class="sidebar-label">DISCOVER</p>
+        <a class="sidebar-link" data-nav-link href="#home"><span class="nav-icon">⌂</span><span>Home</span><i>01</i></a>
+        <a class="sidebar-link" data-nav-link href="#releases"><span class="nav-icon">♫</span><span>Releases</span><i>02</i></a>
+        <a class="sidebar-link" data-nav-link href="#spotify"><span class="nav-icon">◉</span><span>Spotify</span><i>03</i></a>
+        <p class="sidebar-label">COMMUNITY</p>
+        <a class="sidebar-link" data-nav-link href="#socials"><span class="nav-icon">◎</span><span>Social platforms</span><i>04</i></a>
+        <a class="sidebar-link" data-nav-link href="updates.html"><span class="nav-icon">▤</span><span>PTNN Updates</span><i>05</i></a>
+        <p class="sidebar-label">MORE</p>
+        <a class="sidebar-link" data-nav-link href="#store"><span class="nav-icon">✧</span><span>Capybara Store</span><i>06</i></a>
+        <a class="sidebar-link" data-nav-link href="#about"><span class="nav-icon">♡</span><span>About PTNN</span><i>07</i></a>
       </nav>
-
-      <div class="auth-actions" aria-label="Account actions">
-        <a class="dream-button small" href="auth.html#login" data-auth-link="login">Login</a>
-        <a class="dream-button small light" href="auth.html#signup" data-auth-link="signup">Sign Up</a>
-        <button class="dream-button small hidden" type="button" data-auth="signout">Sign Out</button>
+      <div class="sidebar-bottom">
+        <div class="sidebar-now-playing"><span class="equalizer"><i></i><i></i><i></i><i></i></span><span><b>PTNN RADIO</b><small>Music for every moment</small></span></div>
+        <div class="auth-actions sidebar-auth" aria-label="Account actions">
+          <a class="dream-button small" href="auth.html#login" data-auth-link="login">Login</a>
+          <a class="dream-button small light" href="auth.html#signup" data-auth-link="signup">Sign Up</a>
+          <button class="dream-button small hidden" type="button" data-auth="signout">Sign Out</button>
+        </div>
+        <span class="sidebar-version">PTNN WEB EXPERIENCE · 4.3</span>
       </div>
-    </header>
+    </aside>
+    <div class="sidebar-scrim" data-sidebar-close></div>
+    <div class="site-topbar">
+      <button class="sidebar-toggle" type="button" aria-label="Open navigation" aria-controls="site-sidebar" aria-expanded="false" data-sidebar-toggle><span></span><span></span><span></span></button>
+      <div class="topbar-caption"><span class="topbar-live-dot"></span><span>PTNN / Music universe</span></div>
+      <a class="topbar-listen" href="#spotify"><span>♫</span> Listen</a>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+
 
     <main>
       <section id="home" class="hero page-section">
@@ -524,5 +545,6 @@
     <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
     <script src="script.js"></script>
+      <script src="ui-enhancements.js"></script>
   </body>
 </html>
