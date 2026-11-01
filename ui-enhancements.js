@@ -44,7 +44,7 @@
     document.querySelectorAll("main > section[id]").forEach((section) => sectionObserver.observe(section));
   }
 
-  const revealTargets = document.querySelectorAll(".page-section, .social-card, .release-card, .product-card, .about-card, .spotify-panel, .update-card, .updates-admin-card, .updates-feed");
+  const revealTargets = document.querySelectorAll(".page-section, .social-card, .release-card, .about-card, .spotify-panel, .update-card, .updates-admin-card, .updates-feed");
   if ("IntersectionObserver" in window) {
     body.classList.add("reveal-ready");
     const observer = new IntersectionObserver((entries, obs) => {
@@ -57,7 +57,7 @@
     }, { threshold: 0.08, rootMargin: "0px 0px -35px 0px" });
     revealTargets.forEach((element, index) => {
       element.classList.add("reveal-on-scroll");
-      if (element.matches(".social-card, .release-card, .product-card, .update-card")) {
+      if (element.matches(".social-card, .release-card, .update-card")) {
         element.style.transitionDelay = Math.min(index % 6, 5) * 55 + "ms";
       }
       observer.observe(element);
@@ -66,7 +66,7 @@
 
   const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
   if (finePointer) {
-    document.querySelectorAll(".social-card, .release-card, .product-card, .spotify-panel, .about-card").forEach((card) => {
+    document.querySelectorAll(".social-card, .release-card, .spotify-panel, .about-card").forEach((card) => {
       card.addEventListener("pointermove", (event) => {
         const rect = card.getBoundingClientRect();
         card.style.setProperty("--spot-x", (event.clientX - rect.left) + "px");
