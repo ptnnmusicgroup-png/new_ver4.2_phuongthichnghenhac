@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PTNN Updates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Nunito:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <base href="/" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="dream-layer" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    
+    <aside class="site-sidebar" id="site-sidebar" aria-label="PTNN navigation">
+      <a class="sidebar-brand" href="/" aria-label="PTNN home">
+        <span class="sidebar-brand-mark">🐹</span>
+        <span class="sidebar-brand-copy"><strong>PTNN</strong><small>Music With You Everyday!</small></span>
+      </a>
+      <div class="sidebar-divider"></div>
+      <nav class="sidebar-nav" aria-label="Main navigation">
+        <p class="sidebar-label">DISCOVER</p>
+        <a class="sidebar-link" data-nav-link href="/"><span class="nav-icon">⌂</span><span>Home</span><i>01</i></a>
+        <a class="sidebar-link" data-nav-link href="/releases"><span class="nav-icon">♫</span><span>Releases</span><i>02</i></a>
+        <a class="sidebar-link" data-nav-link href="/spotify"><span class="nav-icon">◉</span><span>Spotify</span><i>03</i></a>
+        <p class="sidebar-label">COMMUNITY</p>
+        <a class="sidebar-link" data-nav-link href="/socials"><span class="nav-icon">◎</span><span>Social platforms</span><i>04</i></a>
+        <a class="sidebar-link" data-nav-link href="/updates"><span class="nav-icon">▤</span><span>PTNN Updates</span><i>05</i></a>
+        <p class="sidebar-label">MORE</p>
+        <a class="sidebar-link" data-nav-link href="/about"><span class="nav-icon">♡</span><span>About PTNN</span><i>06</i></a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-now-playing"><span class="equalizer"><i></i><i></i><i></i><i></i></span><span><b>PTNN RADIO</b><small>Music for every moment</small></span></div>
+        <div class="auth-actions sidebar-auth" aria-label="Account actions">
+          <a class="dream-button small" href="/auth#login" data-auth-link="login">Login</a>
+          <a class="dream-button small light" href="/auth#signup" data-auth-link="signup">Sign Up</a>
+          <button class="dream-button small hidden" type="button" data-auth="signout">Sign Out</button>
+        </div>
+        <span class="sidebar-version">PTNN WEB EXPERIENCE · 4.3</span>
+      </div>
+    </aside>
+    <div class="sidebar-scrim" data-sidebar-close></div>
+    <div class="site-topbar">
+      <button class="sidebar-toggle" type="button" aria-label="Open navigation" aria-controls="site-sidebar" aria-expanded="false" data-sidebar-toggle><span></span><span></span><span></span></button>
+      <div class="topbar-caption"><span class="topbar-live-dot"></span><span>PTNN / Updates</span></div>
+      <a class="topbar-listen" href="/spotify"><span>♫</span> Listen</a>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+
+
+    <main>
+      <section class="updates-hero page-section" aria-labelledby="updates-title">
+        <div class="updates-copy">
+          <p class="kicker">PTNN Updates</p>
+          <h1 id="updates-title">Bảng tin chính thức của Phương Thích Nghe Nhạc</h1>
+          <p class="tagline">Đăng thông báo mới, lịch phát hành, hậu trường và note âm nhạc từ một trang riêng.</p>
+        </div>
+        <div class="updates-capybara" aria-hidden="true">
+          <span class="updates-badge">Admin Room</span>
+          <div class="updates-capybara-face">
+            <span class="updates-capybara-eye left"></span>
+            <span class="updates-capybara-eye right"></span>
+            <span class="updates-capybara-nose"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="updates-shell page-section">
+        <aside class="updates-admin-card">
+          <p class="kicker">Admin Console</p>
+          <h2>Đăng bài mới</h2>
+          <p id="updates-session-note">Đăng nhập bằng tài khoản admin mặc định để viết và quản lý bài đăng.</p>
+
+          <div class="updates-session">
+            <span>Tài khoản hiện tại</span>
+            <strong id="updates-session-name">Khách xem</strong>
+          </div>
+
+          <form id="updates-form" class="updates-form">
+            <label>
+              Tiêu đề
+              <input id="update-title" name="title" type="text" placeholder="Ví dụ: PTNN ra mắt playlist mới" required />
+            </label>
+            <label>
+              Tóm tắt
+              <textarea id="update-excerpt" name="excerpt" rows="3" placeholder="Một đoạn ngắn hiện trên thẻ bài viết" required></textarea>
+            </label>
+            <label>
+              Nội dung
+              <textarea id="update-content" name="content" rows="8" placeholder="Nội dung chi tiết của bài đăng" required></textarea>
+            </label>
+            <label>
+              Nhãn bài viết
+              <input id="update-tag" name="tag" type="text" placeholder="Release / Behind the scenes / Event" />
+            </label>
+
+            <div class="checkout-actions">
+              <button class="dream-button compact light" id="clear-update-form" type="button">Xóa form</button>
+              <button class="dream-button compact" id="publish-update" type="submit">Đăng bài</button>
+            </div>
+
+            <p class="checkout-message" id="updates-message" aria-live="polite"></p>
+          </form>
+
+          <div class="updates-divider"></div>
+
+          <p class="kicker">Music Catalog</p>
+          <h2>Add Single/EP/Album</h2>
+          <form id="release-form" class="updates-form">
+            <label>
+              Tên sản phẩm âm nhạc
+              <input id="release-title-input" name="title" type="text" placeholder="Ví dụ: meow!~" required />
+            </label>
+            <label>
+              Loại phát hành
+              <select id="release-type" name="type" required>
+                <option value="Single">Single</option>
+                <option value="EP">EP</option>
+                <option value="Album">Album</option>
+              </select>
+            </label>
+            <label>
+              Trạng thái
+              <select id="release-status" name="status" required>
+                <option value="Coming Soon">Coming Soon</option>
+                <option value="Released">Released</option>
+              </select>
+            </label>
+            <label>
+              Link ảnh bìa
+              <input id="release-image" name="imageUrl" type="text" value="assets/meow-single.png" placeholder="assets/meow-single.png hoặc URL ảnh" />
+            </label>
+            <label>
+              Mô tả ngắn
+              <textarea id="release-description" name="description" rows="3" placeholder="Ví dụ: Release - Coming Soon"></textarea>
+            </label>
+
+            <div class="checkout-actions">
+              <button class="dream-button compact light" id="clear-release-form" type="button">Xóa form</button>
+              <button class="dream-button compact" id="publish-release" type="submit">Đăng sản phẩm</button>
+            </div>
+
+            <p class="checkout-message" id="release-message" aria-live="polite"></p>
+          </form>
+        </aside>
+
+        <section class="updates-feed" aria-labelledby="updates-feed-title">
+          <div class="updates-feed-header">
+            <div>
+              <p class="kicker">News Feed</p>
+              <h2 id="updates-feed-title">Bài đăng mới nhất</h2>
+            </div>
+          </div>
+
+          <div class="updates-list" id="updates-list" aria-live="polite"></div>
+
+          <div class="updates-feed-header">
+            <div>
+              <p class="kicker">Music Releases</p>
+              <h2>Single / EP / Album</h2>
+            </div>
+          </div>
+
+          <div class="release-grid admin-release-list" id="admin-release-list" aria-live="polite"></div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>2026 Phương Thích Nghe Nhạc - All rights reserved</p>
+      <p>Phone: +84 843340112</p>
+      <p>e-mail: <a href="mailto:ptnn.musicgroup@gmail.com">ptnn.musicgroup@gmail.com</a></p>
+      <p class="footer-credit">Made w ❤️ by Phuong Me Dev</p>
+      <p class="footer-stack">Netlify - Codex - GitHub - Phuong Me Dev - Firebase</p>
+    </footer>
+
+    <script src="/site-auth.js"></script>
+    <script src="/site-updates.js"></script>
+    <script src="/firebase-config.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
+    <script src="/updates.js"></script>
+      <script src="/ui-enhancements.js"></script>
+  </body>
+</html>

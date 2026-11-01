@@ -72,7 +72,7 @@ function renderUpdatesPreview() {
           <div class="update-content">${escapeHtml(post.content).replace(/\n/g, "<br />")}</div>
           <div class="update-footer">
             <span>By ${escapeHtml(post.author)}</span>
-            <a class="dream-button compact light" href="updates.html">Xem thêm</a>
+            <a class="dream-button compact light" href="/updates">Xem thêm</a>
           </div>
         </article>
       `
